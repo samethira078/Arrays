@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var week = ['maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'zondag'];
+		function normaal(tekst,begin,eind){
+			document.write("<h2>" + tekst + "</h2>");
+			document.write(week.slice(begin,eind))
+		}
+		normaal("Alle dagen van de week zijn:", 0,week.length);
+		normaal("Dagen van week zijn:", 0,5);
+		normaal("De weekend dagen zijn:", 5,7);
+
+		week.reverse();
+
+		normaal("Alle dagen van de week in omgekeerde volgorde zijn:", 0, 7);
+		normaal("De werkdagen in omgekeerde volgorde zijn:", 2,7);
+		normaal("De weekenddagen in omgekeerde volgorde zijn:", 0,2);
+
+	</script>
+</body>
+</html>
